@@ -4,7 +4,8 @@ from selenium import webdriver
 #C:\Users\sumya\OneDrive\Desktop\chromedriver_win32
 driver = webdriver.Chrome(executable_path='C:/Users/sumya/OneDrive/Desktop/chromedriver_win32/chromedriver.exe')
 driver.get('https://oxylabs.io/blog')
-
+results = []
+other_results = []
 content = driver.page_source
 soup = BeautifulSoup(content)
 driver.quit()
